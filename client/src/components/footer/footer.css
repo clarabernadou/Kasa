@@ -1,0 +1,27 @@
+.footerContainer {
+    background-color: #000000;
+    color: #FFFFFF;
+
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34.22px;
+
+    height: 209px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 122px;
+    height: 39.44px;
+    margin-top: 66px;
+}
+
+.footerContainer p {
+    margin: 0;
+    margin-bottom: 29px;
+}
