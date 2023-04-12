@@ -1,0 +1,14 @@
+.cardsSection {
+    margin: 0 100px;
+}
+
+.cards {
+    background-color: #F6F6F6;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 56px 50px;
+    border-radius: 25px;
+}
