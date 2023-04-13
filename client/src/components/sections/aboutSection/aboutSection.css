@@ -1,0 +1,20 @@
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 100px 43px 100px;
+}
+
+.aboutImg {
+    width: 1240px;
+    height: 223px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 25px;
+}
