@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+}
+
+.infoSection {
+    margin: 0 100px;
+}
+
+.bars {
+    display: flex;
+    justify-content: space-between;
+}

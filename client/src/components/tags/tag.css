@@ -1,0 +1,19 @@
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #FF6060;
+    color: #FFFFFF;
+
+    width: 115px;
+    height: 25px;
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+
+    border-radius: 10px;
+}

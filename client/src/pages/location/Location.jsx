@@ -1,16 +1,16 @@
 import Header from "../../components/header/Header.jsx"
-import BarsSection from "../../components/sections/barsSection/BarsSection.jsx"
+import LocationInfo from "../../components/sections/locationSection/LocationSection.jsx"
 import Footer from "../../components/footer/Footer.jsx"
 
 import { useState } from "react"
 
-export default function LocationInfo() {
+export default function Location() {
     const [ locations, setLocations ] = useState([])
     
     return (
         <>
             <Header/>
-                <BarsSection setLocations={setLocations} locations={locations} />
+                <LocationInfo setLocations={setLocations} locations={locations} />
             <Footer />
         </>
       );
