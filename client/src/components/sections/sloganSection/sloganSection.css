@@ -45,9 +45,7 @@
     .sloganImg{
         width: 335px;
         height: 111px;
-
         justify-content: flex-start;
-
         border-radius: 10px;
     }
 
@@ -65,5 +63,21 @@
         display: inline-block;
         width: 56%;
         margin-left: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .sloganImg {
+        width: 775px;
+        border-radius: 10px;
+    }
+
+    .sloganBackground {
+        width: 775px;
+        border-radius: 10px;
+    }
+
+    .sloganImg h1 {
+        font-size: 32px;
     }
 }
