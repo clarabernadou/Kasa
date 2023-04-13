@@ -43,6 +43,7 @@ body {
         font-family: Montserrat;
         font-size: 12px;
         line-height: 17.11px;
+        text-transform: uppercase;
     }
 
     .headerContainer li {

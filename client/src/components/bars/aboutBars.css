@@ -58,3 +58,35 @@
     margin: 20px;
     padding: 0;
 }
+
+@media only screen and (max-width: 768px) {
+    .aboutContainer {
+        display: flex;
+        align-items: center;
+        margin: 20px 20px 0 20px;
+    }
+
+    .aboutBar {
+        width: 335px;
+        height: 30px;
+        font-size: 13px;
+        line-height: 19px;
+        padding: 0 10px;
+    }
+
+    .aboutBarOptions {
+        width: 335px;
+        font-size: 12px;
+        line-height: 17.11px;
+    
+        margin-top: -15px;
+        padding: 20px 0 20px 0;
+    
+        position: relative;
+        z-index: -1;
+    }
+
+    .aboutBarOptions p {
+        margin: 10px;
+    }
+}
