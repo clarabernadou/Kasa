@@ -1,5 +1,6 @@
 import "./notFound.css"
 import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer"
 
 export default function NotFound() {
     return (
@@ -12,6 +13,7 @@ export default function NotFound() {
                 </div>
                 <a href="/">Retourner sur la page d’accueil</a>
             </div>
+            <Footer />
         </>
       );
 }

@@ -10,7 +10,7 @@ export default function AboutSection() {
     return (
         <div className="aboutContainer">
             <div className="aboutImg" style={{ backgroundImage: `url(${image})` }}>
-                <div className="sloganBackground"></div>                 
+                <div className="aboutBackground"></div>                 
             </div>
             <FiabilityBar />
             <RespectBar />
