@@ -1,5 +1,5 @@
 import "./sloganSection.css"
-import image from "../../assets/IMG.png"
+import image from "../../../assets/IMG.png"
 
 export default function SloganSection() {
     return (

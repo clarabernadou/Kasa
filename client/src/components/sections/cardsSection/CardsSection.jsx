@@ -1,7 +1,7 @@
 import "./cardsSection.css";
 import React, { useEffect } from "react";
-import LocationCard from "../locationCard/LocationCard";
-import data from "../../data/data.json";
+import LocationCard from "../../locationCard/LocationCard";
+import data from "../../../data/data.json";
 
 export default function CardsSection({ locations, setLocations }) {
     useEffect(() => {
