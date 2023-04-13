@@ -61,3 +61,53 @@
     margin: 20px;
     padding: 0;
 }
+
+@media only screen and (max-width: 768px) {
+    .bar {
+        width: 335px;
+        height: 29.93px;
+        border-radius: 5px;
+
+        font-size: 13px;
+        line-height: 18.54px;
+
+        padding: 0 10px;
+    }
+
+    .bar i {
+        font-size: 16px;
+    }
+    
+    .barOptions {
+        width: 335px;
+        font-size: 12px;
+        line-height: 17.11px;
+    }
+
+    .barOptions ul {
+        margin: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .bar {
+        width: 635px;
+        height: 39.93px;
+        border-radius: 5px;
+
+        font-size: 15px;
+        line-height: 21.54px;
+
+        padding: 0 10px;
+    }
+
+    .bar i {
+        font-size: 19px;
+    }
+
+    .barOptions {
+        width: 635px;
+        font-size: 15px;
+        line-height: 21.54px;
+    }
+}

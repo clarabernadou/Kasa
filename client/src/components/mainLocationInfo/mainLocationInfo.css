@@ -1,5 +1,47 @@
-.carousel {
-    width: 1240px;
-    height: 415px;
-    border-radius: 25px;
+.mainInfoContainer {
+    width: 100%;
+    margin-bottom: 20px;
+    color: #FF6060;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+.locationInfo h1{
+    font-size: 36px;
+    line-height: 51px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.locationInfo p {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .mainInfoContainer {
+        margin: 0 20px 10px 20px;
+    }
+
+    .locationInfo h1{
+        font-size: 18px;
+        line-height: 25.67px;
+    }
+
+    .locationInfo p {
+        font-size: 14px;
+        line-height: 19.96px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .locationInfo h1{
+        font-size: 26px;
+        line-height: 36.67px;
+    }
+
+    .locationInfo p {
+        font-size: 20px;
+    }
 }

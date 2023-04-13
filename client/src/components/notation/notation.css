@@ -1,0 +1,26 @@
+.rating-bar {
+    display: flex;
+    gap: 15px;
+}
+
+.fa-star {
+    font-size: 25px;
+}
+
+.redStar {
+    color: #FF6060;
+}
+
+.greyStar {
+    color: #E3E3E3;
+}
+
+@media only screen and (max-width: 768px) {
+    .rating-bar {
+        gap: 5px;
+    }
+
+    .fa-star {
+        font-size: 12px;
+    }
+}
