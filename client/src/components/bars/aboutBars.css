@@ -1,61 +1,60 @@
-.equipmentContainer {
-    width: 582px;
-    height: auto;
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+    margin: 33px 100px 0 100px;
 }
 
-.equipmentBar {
+.aboutBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    width: 582px;
-    height: 52px;
+    width: 1023px;
+    height: 47px;
     padding: 0 20px;
 
-    border-radius: 10px;
+    border-radius: 5px;
+    border: none;
 
     background-color: #FF6060;
     color: #FFFFFF;
 
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 34px;
     letter-spacing: 0em;
     text-align: left;    
-
-    position: absolute;
 }
 
-.equipmentBar i {
-    font-size: 30px;
-}
-
-.equipmentOptions {
+.aboutBarOptions {
     background-color: #F6F6F6;
     color: #FF6060;
 
-    width: 582px;
+    width: 1023px;
     height: auto;
 
-    border-radius: 10px;
+    border-radius: 5px;
 
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 400;
-    line-height: 26px;
-    text-align: left;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;    
 
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
 
-    margin-top: -10px;
-    padding-top: 65px;
+    margin-top: -15px;
+    padding-top: 20px;
+
+    position: relative;
+    z-index: -1;
 }
 
-.equipmentOptions ul {
-    list-style-type: none;
+.aboutBarOptions p {
     margin: 20px;
     padding: 0;
 }
