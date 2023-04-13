@@ -49,3 +49,19 @@
         border-radius: 10px;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .aboutContainer {
+        margin: 20px 20px 0 20px !important;
+    }
+
+    .aboutImg {
+        width: 775px;
+        border-radius: 10px;
+    }
+
+    .aboutBackground {
+        width: 775px;
+        border-radius: 10px;
+    }
+}
