@@ -1,5 +1,7 @@
+import "./barsSection.css"
 import React, { useEffect } from "react";
 import EquipmentBar from "../../bars/equipmentBar/EquipmentBar";
+import DesciptionBar from "../../bars/descriptionBar/DescriptionBar";
 import data from "../../../data/data.json";
 
 export default function BarsSection({ locations, setLocations }) {
@@ -14,6 +16,9 @@ export default function BarsSection({ locations, setLocations }) {
     <div className="barsSection">
       <div className="bars">
         <EquipmentBar
+          location={filteredLocation[0]}
+        />
+        <DesciptionBar
           location={filteredLocation[0]}
         />
       </div>

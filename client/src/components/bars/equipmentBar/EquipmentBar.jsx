@@ -1,4 +1,4 @@
-import "./equipmentBar.css";
+import "../bars.css";
 import React, { useState } from "react";
 
 export default function EquipmentBar( locations ) {
@@ -11,8 +11,8 @@ export default function EquipmentBar( locations ) {
     };
     
     return (
-        <div className="equipmentContainer">
-            <button className="equipmentBar" onClick={toggleBar}>
+        <div className="barsContainer">
+            <button className="bar" onClick={toggleBar}>
                 <p>Équipements</p>
                 {isBarOpen ? (
                     <i className="fas fa-chevron-up"></i>
@@ -22,7 +22,7 @@ export default function EquipmentBar( locations ) {
             </button>
 
             {isBarOpen && 
-                <div className="equipmentOptions">
+                <div className="barOptions">
                     <ul>
                         {location.equipments.map((equipment, index) => (
                         <li key={index}>{equipment}</li>

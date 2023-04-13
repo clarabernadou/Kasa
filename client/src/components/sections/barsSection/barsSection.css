@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+}
+
+.barsSection {
+    margin: 0 100px;
+}
+
+.bars {
+    display: flex;
+    justify-content: space-between;
+}
