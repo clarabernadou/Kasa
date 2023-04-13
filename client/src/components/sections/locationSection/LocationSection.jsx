@@ -1,8 +1,6 @@
 import "./locationSection.css";
 import React, { useEffect } from "react";
 
-import LocationInfo from "../../locationInfo/LocationInfo";
-import Tag from "../../tags/Tag";
 import EquipmentBar from "../../bars/equipmentBar/EquipmentBar";
 import DescriptionBar from "../../bars/descriptionBar/DescriptionBar";
 
@@ -18,12 +16,6 @@ export default function LocationSection({ locations, setLocations }) {
 
   return (
     <div className="infoSection">
-      <div className="mainInfo">
-        <LocationInfo location={filteredLocation[0]} />
-      </div>
-      <div className="tagsInfo">
-        <Tag location={filteredLocation[0]}/>
-      </div>
       <div className="bars">
         <EquipmentBar location={filteredLocation[0]} />
         <DescriptionBar location={filteredLocation[0]} />
