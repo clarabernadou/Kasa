@@ -1,35 +1,60 @@
 .carouselContainer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
-
+  
 .carouselImg {
-    width: 1240px;
+    width: 100%;
     height: 415px;
     border-radius: 25px;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     background-size: cover;
     background-position: center;
+    position: relative;
+}
+  
+.navigationArrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.carouselImg i {
+.navigationArrows i {
     color: #FFFFFF;
     font-size: 100px;
     margin: 0 20px;
 }
+  
+.indexImg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.indexImg p {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
 
 @media only screen and (max-width: 768px) {
     .carouselImg {
-        width: 335px;
         height: 255px;
     }
 
-    .carouselImg i {
+    .carouselImg p {
+        font-size: 12px;
+    }
+
+    .navigationArrows i {
         font-size: 30px;
         margin: 0 5px;
     }
@@ -37,12 +62,12 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .carouselImg {
-        width: 655px;
         height: 355px;
     }
 
-    .carouselImg i {
+    .navigationArrows i {
         font-size: 50px;
         margin: 0 10px;
     }
 }
+  
