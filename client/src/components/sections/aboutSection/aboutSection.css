@@ -37,6 +37,10 @@
     margin-top: 30px;
 }
 
+.aboutDropdown p {
+    font-size: 24px;
+}
+
 @media only screen and (max-width: 768px) {
     .aboutContainer {
         display: flex;
@@ -52,6 +56,10 @@
     .aboutBackground {
         height: 223px;
         border-radius: 10px;
+    }
+
+    .aboutDropdown p {
+        font-size: 13px;
     }
 }
 
