@@ -19,8 +19,13 @@ export default function Carousel({ location }) {
   return (
     <div className="carouselContainer">
       <div className="carouselImg" style={{ backgroundImage: `url(${images[currentImage]})` }}>
-        {showArrows && <i onClick={prevImage} className="fas fa-chevron-left"></i>}
-        {showArrows && <i onClick={nextImage} className="fas fa-chevron-right"></i>}
+        <div className="navigationArrows">
+          {showArrows && <i onClick={prevImage} className="fas fa-chevron-left"></i>}
+          {showArrows && <i onClick={nextImage} className="fas fa-chevron-right"></i>}          
+        </div>
+        <div className="indexImg">
+          <p>{currentImage +1}/{images.length}</p>
+        </div>
       </div>
     </div>
   );
