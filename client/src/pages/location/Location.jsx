@@ -6,7 +6,7 @@ import NotFound from "../notFound/NotFound.jsx";
 
 export default function Location({location}) {
     console.log(location);
-    if(location == undefined){
+    if(location === undefined){
         return (
             <NotFound />
         );
