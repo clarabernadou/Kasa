@@ -1,38 +1,43 @@
 import "./locationInfo.css"
 
-import React, { useEffect, useState } from "react";
-import data from "../../data/data.json";
+import React from "react";
 
 import Carousel from "../carousel/Carousel";
 import MainInfoContainer from "../mainLocationInfo/MainLocationInfo";
 import Tags from "../tags/Tags";
 import HostInfo from "../hostInfo/HostInfo";
 import Notation from "../notation/Notation";
+import Dropdown from "../dropdown/Dropdown";
 
-export default function LocationInfo() {
-  const [locations, setLocations] = useState(data);
-
-  useEffect(() => {
-    setLocations(data);
-  }, []);
-
-  const id = window.location.pathname.split("/").pop();
-  const filteredLocation = locations.filter((location) => location.id === id);
-
+export default function LocationInfo({location}) {
   return (
     <div className="infoContainer">
-        <Carousel location={filteredLocation[0]} />
+        <Carousel location={location} />
         <div className="alignInfo">
           <div className="allInfoContainer">
-            <MainInfoContainer location={filteredLocation[0]} />
-            <Tags location={filteredLocation[0]} />
+            <MainInfoContainer location={location} />
+            <Tags location={location} />
           </div>
 
           <div className="otherContainer">
-            <HostInfo location={filteredLocation[0]} />
-            <Notation location={filteredLocation[0]} />
+            <HostInfo location={location} />
+            <Notation location={location} />
           </div>
         </div>
+        <div className="dropdowns">
+            <Dropdown>
+                <p>Description</p>
+                <p>{location.description}</p>
+            </Dropdown>
+            <Dropdown>
+                <p>Équipements</p>
+                <ul>
+                  {location.equipments.map((equipment, index) => (
+                    <li key={index}>{equipment}</li>
+                  ))}
+                </ul>
+            </Dropdown>
+          </div>
     </div>
   );
 }

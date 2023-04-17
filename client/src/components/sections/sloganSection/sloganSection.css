@@ -5,7 +5,7 @@
 }
 
 .sloganImg {
-    width: 1240px;
+    width: 100%;
     height: 223px;
 
     display: flex;
@@ -19,7 +19,7 @@
 }
 
 .sloganBackground {
-    width: 1240px;
+    width: 100%;
     height: 223px;
 
     background: #000000;
@@ -39,18 +39,16 @@
 
 @media only screen and (max-width: 768px) {
     .sloganContainer {
-        margin: 0;
+        margin: 0 20px;
     }
     
     .sloganImg{
-        width: 335px;
         height: 111px;
         justify-content: flex-start;
         border-radius: 10px;
     }
 
     .sloganBackground{
-        width: 335px;
         height: 111px;
         border-radius: 10px;
     }
@@ -67,13 +65,15 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .sloganContainer {
+        margin: 0 30px 43px 30px;
+    }
+
     .sloganImg {
-        width: 775px;
         border-radius: 10px;
     }
 
     .sloganBackground {
-        width: 775px;
         border-radius: 10px;
     }
 

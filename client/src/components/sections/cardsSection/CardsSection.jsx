@@ -1,13 +1,8 @@
 import "./cardsSection.css";
-import React, { useEffect } from "react";
+import React from "react";
 import LocationCard from "../../locationCard/LocationCard";
-import data from "../../../data/data.json";
 
-export default function CardsSection({ locations, setLocations }) {
-    useEffect(() => {
-        setLocations(data);
-    }, [setLocations]);
-
+export default function CardsSection({ locations }) {
   return (
     <div className="cardsSection">
       <div className="cards">
@@ -15,11 +10,9 @@ export default function CardsSection({ locations, setLocations }) {
           <LocationCard
             key={location.id}
             location={location}
-            setLocations={setLocations}
           />
         ))}
       </div>
     </div>
   );
 }
-
