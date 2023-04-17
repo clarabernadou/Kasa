@@ -3,15 +3,13 @@ import SloganSection from "../../components/sections/sloganSection/SloganSection
 import CardsSection from "../../components/sections/cardsSection/CardsSection.jsx"
 import Footer from "../../components/footer/Footer.jsx"
 
-import { useState } from "react"
-
-export default function Home() {
-    const [ locations, setLocations ] = useState([])
+export default function Home({locations}) {
+  console.log(locations);
     return (
         <>
           <Header/>
             <SloganSection />
-            <CardsSection setLocations={setLocations} locations={locations}/>
+            <CardsSection locations={locations}/>
           <Footer />
         </>
       );

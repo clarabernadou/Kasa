@@ -1,18 +1,13 @@
 import Header from "../../components/header/Header.jsx"
 import LocationInfo from "../../components/locationInfo/LocationInfo.jsx"
-import LocationSection from "../../components/sections/locationSection/LocationSection.jsx"
 import Footer from "../../components/footer/Footer.jsx"
 
-import { useState } from "react"
-
-export default function Location() {
-    const [ locations, setLocations ] = useState([])
-    
+export default function Location({location}) {
+    console.log(location);
     return (
         <>
             <Header/>
-                <LocationInfo setLocations={setLocations} locations={locations} />
-                <LocationSection setLocations={setLocations} locations={locations} />
+                <LocationInfo location={location} />
             <Footer />
         </>
       );

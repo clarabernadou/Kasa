@@ -1,7 +1,11 @@
+.infoContainer {
+    margin: 0 100px;
+}
+
 .alignInfo {
     display: flex;
     justify-content: space-between;
-    margin: 30px 100px;
+    margin: 30px 0px;
 }
 
 .allInfoContainer {
@@ -17,10 +21,86 @@
     justify-content: space-between;
 }
 
+.dropdowns {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 75px;
+}
+
+.dropdownContainer {
+    width: 100%;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 52px;
+    padding: 0 20px;
+
+    border-radius: 10px;
+    border: none;
+
+    background-color: #FF6060;
+    color: #FFFFFF;
+
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.dropdown i {
+    font-size: 30px;
+}
+
+.dropdownOptions {
+    background-color: #F6F6F6;
+    color: #FF6060;
+
+    height: auto;
+
+    border-radius: 10px;
+
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    margin-top: -25px;
+    padding-top: 20px;
+
+    position: relative;
+    z-index: -1;
+}
+
+.dropdownOptions ul {
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+}
+
+.dropdownOptions p {
+    margin: 20px;
+    padding: 0;
+}
+
 @media only screen and (max-width: 768px) {
+    .infoContainer {
+        margin: 0 20px;
+    }
+
     .alignInfo {
         flex-direction: column;
-        margin: 15px 20px;
+        margin-top: 15px;
     }
 
     .otherContainer {
@@ -28,12 +108,40 @@
         align-items: center;
         margin-top: 15px;
     }
+
+    .dropdowns {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .dropdown {
+        height: 29.93px;
+        border-radius: 5px;
+
+        font-size: 13px;
+        line-height: 18.54px;
+
+        padding: 0 10px;
+    }
+
+    .dropdown i {
+        font-size: 16px;
+    }
+    
+    .dropdownOptions {
+        font-size: 12px;
+        line-height: 17.11px;
+    }
+
+    .dropdownOptions ul {
+        margin: 10px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .alignInfo {
         flex-direction: column;
-        margin: 15px 100px;
+        margin: 15px 0px;
     }
 
     .otherContainer {

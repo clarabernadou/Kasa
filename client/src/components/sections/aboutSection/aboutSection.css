@@ -6,7 +6,7 @@
 }
 
 .aboutImg {
-    width: 1240px;
+    width: 100%;
     height: 223px;
 
     display: flex;
@@ -20,7 +20,7 @@
 }
 
 .aboutBackground {
-    width: 1240px;
+    width: 100%;
     height: 223px;
 
     background: #000000;
@@ -28,6 +28,13 @@
     opacity: 0.3;
     
     border-radius: 25px;
+}
+
+.aboutDropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -38,13 +45,11 @@
     }   
 
     .aboutImg {
-        width: 336px;
         height: 223px;
         border-radius: 10px;
     }
 
     .aboutBackground {
-        width: 336px;
         height: 223px;
         border-radius: 10px;
     }
@@ -56,12 +61,10 @@
     }
 
     .aboutImg {
-        width: 775px;
         border-radius: 10px;
     }
 
     .aboutBackground {
-        width: 775px;
         border-radius: 10px;
     }
 }
