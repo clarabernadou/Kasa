@@ -24,7 +24,7 @@ export default function Carousel({ location }) {
           {showArrows && <i onClick={nextImage} className="fas fa-chevron-right"></i>}          
         </div>
         <div className="indexImg">
-          <p>{currentImage +1}/{images.length}</p>
+          {showArrows && <p>{currentImage +1}/{images.length}</p>}
         </div>
       </div>
     </div>
