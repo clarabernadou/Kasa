@@ -6,7 +6,7 @@ export default function LocationCard( locations, setLocations ) {
 
     const handleClick = (event) => {
         console.log(location.id);
-        window.location.href = `/location/${location.id}`;
+        window.location.href = process.env.PUBLIC_URL + `/location/${location.id}`;
     };
 
     return (
