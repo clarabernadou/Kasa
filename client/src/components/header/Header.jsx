@@ -7,7 +7,7 @@ import "./header.css";
 export default function Header() {
   const home = (e) => {
     e.preventDefault(); // To prevent the default event
-    window.location.href = "/"; // Navigate to home page
+    window.location.href = process.env.PUBLIC_URL + "/"; // Navigate to home page
   };
 
   const location = useLocation();
@@ -18,10 +18,10 @@ export default function Header() {
     <div className="headerContainer">
       <img className="logo_header" src={Logo} onClick={home} alt="Logo Kasa" />
       <li>
-        <a href="/" style={{ textDecoration: homePath ? "underline" : "none" }}>
+        <a href={process.env.PUBLIC_URL + "/"} style={{ textDecoration: homePath ? "underline" : "none" }}>
           Accueil
         </a>
-        <a href="/about-us" style={{ textDecoration: aboutUsPath ? "underline" : "none" }}>
+        <a href={process.env.PUBLIC_URL + "/about-us"} style={{ textDecoration: aboutUsPath ? "underline" : "none" }}>
           A Propos
         </a>
       </li>
