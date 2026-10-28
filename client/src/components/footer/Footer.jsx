@@ -6,7 +6,7 @@ import Logo from "../../assets/LOGO.png"
 export default function footer() {
     const home = e => {
         e.preventDefault() //To prevent the default event
-        window.location.href = "/"; //Navigate to home page
+        window.location.href = process.env.PUBLIC_URL + "/"; //Navigate to home page
     }
     return (
         <div className="footerContainer">
