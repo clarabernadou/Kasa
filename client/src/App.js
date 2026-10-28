@@ -13,7 +13,7 @@ function App() {
   const location = data.find((loc) => loc.id === id);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Home locations={data} />} />
         <Route path={`/location/${id}`} element={<Location location={location} />} />
